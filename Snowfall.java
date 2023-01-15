@@ -35,7 +35,7 @@ public class Snowfall
         //System.out.println("Data obtained is:");
         for (int i=0; i<snowfall.length; i++){
             //System.out.println();
-            //System.out.print(year++ + "\t");
+            System.out.print(year++ + "\t");
             //System.out.print(year[i] + "\t");
             
             for (int j=0;j<snowfall[i].length;j++){

@@ -19,8 +19,8 @@ public class TimesTableMark2{
         for(int i = 0; i < 6; i++){
             for(int j = 0; j < 6; j++){
                 times[i][j] = (i + 1) * (j + 1);
-            }
-        }
+            }// end for j
+        }// end for i
         
         // print the first row (column headings)
         System.out.print("Times\t");
