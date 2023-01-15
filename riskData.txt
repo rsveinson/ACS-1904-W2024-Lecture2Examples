@@ -1,0 +1,4 @@
+Ike 3 3 2 2 1
+Tina 4 5 6 3 4
+Roger 3 4 3 4 6
+Joan 5 6 6 5 5
