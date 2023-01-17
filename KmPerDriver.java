@@ -22,11 +22,12 @@ public class KmPerDriver
             System.out.print("driver: " + i + "\t");
             
             // now add up each distance in row i
-            // don't forget to star adding from 0
+            // don't forget to start adding from 0
             distance = 0;
 
             for (int j=0;j<trips[i].length;j++){
                 distance += trips[i][j];
+                System.out.print(trips[i][j] + " ");
             }
             System.out.print(distance + "\t");
             System.out.println();
