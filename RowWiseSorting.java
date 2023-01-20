@@ -41,9 +41,9 @@ public class RowWiseSorting{
     }// end sort
     
     
-    public static void printTable(int[][] t, int r, int c){
-        for(int i = 0; i < r; i++){
-            for(int j = 0; j < c; j++){
+    public static void printTable(int[][] t, int rows, int columns){
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < columns; j++){
                 System.out.print(t[i][j] + " ");
             }// end j
             System.out.println();

@@ -17,6 +17,7 @@ public class MatrixAddition
             {0, 0, 0, 0},
             {0, 0, 0, 0}
         };;
+        
         // C = A + B
         // For each c[i][j] in C
         //    c[i][j] = a[i][j]+b[i][j]
@@ -25,6 +26,7 @@ public class MatrixAddition
         for (int i=0; i< a.length; i++)
             for (int j=0; j<a[i].length; j++)
                 c[i][j] =a [i][j] + b[i][j];
+                
         // display the 3 matrices
         displayMatrix("A = ",a);
         displayMatrix("B = ",b);
