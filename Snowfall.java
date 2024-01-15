@@ -4,8 +4,7 @@ import java.io.FileNotFoundException;
 
 public class Snowfall
 {
-    public static void main(String[] args)
-    throws FileNotFoundException {
+    public static void main(String[] args)throws FileNotFoundException {
         // an array of 15 rows and 12 columns
         double [][] snowfall = new double[15][12];
         int year = 2000;
