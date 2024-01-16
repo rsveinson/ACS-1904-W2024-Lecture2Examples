@@ -26,21 +26,21 @@ public class SnowFallAlternativeLoading
         // outer loop controls the row subscript
         //strin = f.next();       // read in the first line from the file
         //strin = f.nextLine();
-        
+
         while(f.hasNextLine()){
             strin = f.nextLine();
-            System.out.println(strin);
+            //System.out.println(strin);
             // // create a scanner for the line read from the file
-            // Scanner s = new Scanner(strin);
+            Scanner s = new Scanner(strin);
 
-            // // inner loop controls the column 
-            // for (int j = 0; j < snowfall[rows].length; j++){
-            // snowfall[rows][j] = s.nextDouble();
-            // }
+            // inner loop controls the column 
+            for (int j = 0; j < snowfall[rows].length; j++){
+                snowfall[rows][j] = s.nextDouble();
+            }
 
             // increment rows
             rows++;
-            System.out.println("in loop");
+            //System.out.println("in loop");
 
             // read in the next line from the file
             //strin = f.next();            
@@ -55,6 +55,7 @@ public class SnowFallAlternativeLoading
         for (int i=0; i<snowfall.length; i++){
             //System.out.println();
             System.out.print(year++ + "\t");
+            //System.out.print(years[i] + "\t");
             for (int j=0;j<snowfall[i].length;j++){
                 System.out.print(snowfall[i][j]+"\t");
             }
