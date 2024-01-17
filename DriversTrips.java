@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class DriversTrips
 {
     public static void main(String[] args ){
@@ -26,6 +27,10 @@ public class DriversTrips
             }
             System.out.println();
         }
+        
+        // example: using the Arays class static method toString(...)
+        //System.out.println(Arrays.toString(trips[0]));
+
     }
 
 }
