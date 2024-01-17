@@ -19,12 +19,15 @@ public class KmPerTripParallelArray
         
         int distance = 0;
         
-        System.out.println("\n\t\tDriver Trips");
+        /* calculate the total distance for each driver by adding
+         * up the distance of each trip
+         * I'm not going to 
+         */ 
         
         // number of drivers = number of rows
         //    is trips.length
         for (int i=0; i<trips.length; i++){
-            System.out.print("driver: " + i + "\t");
+            //System.out.print("driver: " + i + "\t");
             
             // now add up each distance in row i
             // don't forget to start adding from 0
@@ -32,16 +35,15 @@ public class KmPerTripParallelArray
 
             for (int j=0;j<trips[i].length;j++){
                 distance += trips[i][j];
-                System.out.print(trips[i][j] + " ");
+                //System.out.print(trips[i][j] + " ");
             }
-            System.out.print(distance + "\t");
+            //System.out.print(distance + "\t");
             
             // now we can add the  calculated distance
             // to the distance array at index i
             tripDistance[i] = distance;
-            System.out.println();
         }// end for
-        
+
         
         //  now we can print the disetance per trip on demand
         System.out.println("Distance per trip.");
