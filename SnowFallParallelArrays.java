@@ -18,6 +18,7 @@ public class SnowFallParallelArrays
         // need a starting year
         int startingYear = 2000;
         
+        // keep track of how many rows have been used/made
         int rows = 0;
 
         // open the input data stream
@@ -38,7 +39,8 @@ public class SnowFallParallelArrays
             
             // add a new element to the year array
             year[rows] = startingYear + rows;
-            // // create a scanner for the line read from the file
+            
+            //create a scanner for the line read from the file
             Scanner s = new Scanner(strin);
 
             // inner loop controls the column 
@@ -47,11 +49,7 @@ public class SnowFallParallelArrays
             }
 
             // increment rows
-            rows++;
-            //System.out.println("in loop");
-
-            // read in the next line from the file
-            //strin = f.next();            
+            rows++;            
         }// end eof loop
 
         // display the contents of the table by year
@@ -67,10 +65,10 @@ public class SnowFallParallelArrays
             // print the table of temperatures
             for (int j=0;j<snowfall[i].length;j++){
                 System.out.print(snowfall[i][j]+"\t");
-            }
+            }// end for j
             System.out.println();
-        }
-    }
+        }// end for i
+    }// end main
 
     public static void printRowAndColHeadings(){
         System.out.print("Year\t");
