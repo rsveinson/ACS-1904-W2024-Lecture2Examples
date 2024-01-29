@@ -34,14 +34,15 @@ public class KmPerTripParallelArray
             distance = 0;
 
             for (int j=0;j<trips[i].length;j++){
-                distance += trips[i][j];
+                //distance += trips[i][j];
+                tripDistance[i] += trips[i][j];
                 //System.out.print(trips[i][j] + " ");
             }
             //System.out.print(distance + "\t");
             
             // now we can add the  calculated distance
             // to the distance array at index i
-            tripDistance[i] = distance;
+            //tripDistance[i] = distance;
         }// end for
 
         
@@ -58,7 +59,7 @@ public class KmPerTripParallelArray
             
             // print the table row of trip distancesw
             for (int j=0;j<trips[i].length;j++){
-                distance += trips[i][j];
+                //distance += trips[i][j];
                 System.out.print(trips[i][j] + " ");
             }// end for
             
