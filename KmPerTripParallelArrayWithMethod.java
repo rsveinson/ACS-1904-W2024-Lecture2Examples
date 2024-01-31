@@ -27,10 +27,14 @@ public class KmPerTripParallelArrayWithMethod
         // number of drivers = number of rows
         //    is trips.length
         for (int i=0; i<trips.length; i++){
-            
+
             // pass one row into the sum method
             tripDistance[i] = sumList(trips[i]);
         }// end for
+        
+        // or, not quite as good in my opinion but you could
+        // argue otherwise
+        //sumList(trips, tripDistance);
 
         //  now we can print the disetance per trip on demand
         System.out.println("Distance per trip.");
@@ -55,6 +59,17 @@ public class KmPerTripParallelArrayWithMethod
         }// end for
     }
 
+    public static void sumList(int[][] t, int[] l){
+        for (int i=0; i<t.length; i++){
+
+            // sum the table row of trip distancesw
+            for (int j=0; j<t[i].length; j++){
+                //distance += trips[i][j];
+                l[i] += t[i][j];
+            }// end for    
+        }// end ;for i
+    }// end sumlist
+
     public static int sumList(int[] t){
         int sum = 0;
 
@@ -64,7 +79,7 @@ public class KmPerTripParallelArrayWithMethod
         }// end for
         return sum;
     }// end get driver total
-    
+
     public static void printList(int[] l, int actualLength){
         for(int i = 0; i < actualLength; i++){
             System.out.println(i + 1 + ": " + l[i]);
