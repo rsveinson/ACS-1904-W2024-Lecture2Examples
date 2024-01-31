@@ -62,7 +62,7 @@ public class KmPerTripParallelArrayWithMethod
     public static void sumList(int[][] t, int[] l){
         for (int i=0; i<t.length; i++){
 
-            // sum the table row of trip distancesw
+            // sum the table row of trip distances
             for (int j=0; j<t[i].length; j++){
                 //distance += trips[i][j];
                 l[i] += t[i][j];
