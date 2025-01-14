@@ -4,7 +4,7 @@ import java.util.Scanner;
  * @author 
 */
 
-public class ArrayOfArraqysExplained{
+public class ArrayOfArraysExplained{
     public static void main(String[] args) {
         final int MAXROW = 5;
         final int MAXCOL = 4;
