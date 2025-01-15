@@ -37,6 +37,7 @@ public class RowWiseSorting{
     public static void sortTable(int[][] t, int size){
         for(int i = 0; i < size; i++){
             Arrays.sort(t[i]);
+            //sortRow(t[i]);
         }// end i
     }// end sort
     
@@ -49,6 +50,14 @@ public class RowWiseSorting{
             System.out.println();
         }//end i
     }// end printtable
+    
+    /* add another static method to 
+     * sort one row (or in fact a 1D array
+     * this method will then be called in the sortTable method
+     */
+    public static void sortRow(int[] r){
+        Arrays.sort(r);
+    }// end sortRow
     
     
 }// end class

@@ -23,6 +23,7 @@ public class KmPerDriver
             
             // now add up each distance in row i
             // don't forget to start adding from 0
+            // what happens is we comment this line out?
             distance = 0;
 
             for (int j=0;j<trips[i].length;j++){
