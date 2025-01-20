@@ -22,6 +22,7 @@ public class DriversTrips
             
             // number of trips for ith driver 
             //    is trips[i].length
+            System.out.print("Length " + trips[i].length + " ");
             for (int j=0;j<trips[i].length;j++){
                 System.out.print(trips[i][j]+"\t");
             }
